@@ -1,15 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>heors</title>
-		<meta name="author" content="SachinYe" />
-		<!-- Date: 2016-02-09 -->
-	</head>
-	<body>
-
-	</body>
-</html>
-
+<h1>{{selectedHero}}</h1>
+<table border="0">
+	<tr>
+		<th>Index</th>
+		<th>Title</th>
+		<th>poster</th>
+	
+	</tr>
+	<tr ng-repeat="movie in movies">
+		<th>{{movie.sl }}</th>
+		<th>{{movie.title }}</th>
+		<th><img ng-src="{{ movie.poster }}" width="50" align="absmiddle"/></th>
+	
+	</tr>
+</table>
