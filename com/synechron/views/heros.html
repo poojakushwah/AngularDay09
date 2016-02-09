@@ -12,7 +12,7 @@
 		<th>{{hero.title }}</th>
 		<th><img ng-src="{{ hero.photo }}" width="50" align="absmiddle"/></th>
 		<th>{{hero.city}}</th>
-		<th><input type="range" ng-model="hero.power"/></th>
+		<th><input type="range" min="1" max="10" ng-model="hero.power"/></th>
 		<th><a href="#/movies/{{hero.id}}">Total Movies {{ hero.movies }}</a></th>
 	</tr>
 </table>
