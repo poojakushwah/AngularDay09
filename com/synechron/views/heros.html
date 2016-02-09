@@ -1,4 +1,4 @@
-<table border="0">
+<table border="1">
 	<tr>
 		<th>Index</th>
 		<th>Title</th>
@@ -7,7 +7,7 @@
 		<th>Power</th>
 		<th>Movies Total</th>
 	</tr>
-	<tr ng-repeat="hero in data.heros">
+	<tr ng-repeat="hero in data.heros"  ng-class-odd="'oddd'" ng-class-even="'evd'">
 		<th>{{hero.id }}</th>
 		<th>{{hero.title }}</th>
 		<th><img ng-src="{{ hero.photo }}" width="50" align="absmiddle"/></th>
@@ -21,3 +21,5 @@
 
 <h1>{{constMessage}}</h1>
 <h1>{{consVersion}}</h1>
+
+<h1>{{ ht }}</h1>

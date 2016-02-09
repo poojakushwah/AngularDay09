@@ -1,7 +1,17 @@
 ( function() {
 		angular.module("app", ["ngRoute"]);
+		//angular.module("app").config(function($routeProvider,constantrecipe,$provide) {
 		angular.module("app").config(function($routeProvider,constantrecipe) {
-			alert(constantrecipe.message)
+			//--------------Provide-----------------
+			/*$provide.provider("hero",function(){
+				this.$get=function(){
+					var appTitle="Synechron Hero Application";
+					return {
+						apt:appTitle;
+					}
+				}
+			});*/
+			alert(constantrecipe.message);
 			$routeProvider
 			.when("/", {
 				controller : "herocontroller",
